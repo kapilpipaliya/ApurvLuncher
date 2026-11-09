@@ -1,0 +1,6 @@
+{
+  "name": "NovaLauncher Desktop - Draggable & Resizable Grid Workspace",
+  "description": "A cross-platform responsive desktop launcher with interactjs for draggable and resizable grid shortcuts, local file folder storage, and atomic JSON database configuration persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

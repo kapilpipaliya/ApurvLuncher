@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
+
+  <!-- Grid Blueprint Elements -->
+  <g opacity="0.15" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="96" y1="96" x2="416" y2="96" />
+    <line x1="96" y1="256" x2="416" y2="256" />
+    <line x1="96" y1="416" x2="416" y2="416" />
+    <line x1="96" y1="96" x2="96" y2="416" />
+    <line x1="256" y1="96" x2="256" y2="416" />
+    <line x1="416" y1="96" x2="416" y2="416" />
+  </g>
+
+  <!-- Central Nova Launcher Emblem -->
+  <g transform="translate(256, 256)" filter="url(#dropGlow)">
+    <!-- Outer Rotated Diamond -->
+    <rect x="-96" y="-96" width="192" height="192" rx="36" transform="rotate(45)" fill="url(#accentGrad)" />
+
+    <!-- Inner Core Geometry -->
+    <rect x="-60" y="-60" width="120" height="120" rx="20" transform="rotate(45)" fill="#0f172a" />
+
+    <!-- Glowing Launcher Focus Grid -->
+    <circle cx="0" cy="0" r="16" fill="#38bdf8" />
+    
+    <!-- 4 Satellite Dots -->
+    <circle cx="-38" cy="-38" r="7" fill="#818cf8" />
+    <circle cx="38" cy="-38" r="7" fill="#818cf8" />
+    <circle cx="-38" cy="38" r="7" fill="#818cf8" />
+    <circle cx="38" cy="38" r="7" fill="#818cf8" />
+  </g>
+</svg>

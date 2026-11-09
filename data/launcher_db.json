@@ -1,0 +1,253 @@
+{
+  "version": 2,
+  "createdAt": "2026-11-09T00:49:25.589Z",
+  "lastUpdated": "2026-11-09T00:49:25.590Z",
+  "settings": {
+    "gridSnap": true,
+    "gridCellSize": 80,
+    "theme": "dark",
+    "wallpaper": "/src/assets/images/launcher_wallpaper_cyber_abstract_1794184895306.jpg",
+    "wallpaperBlur": 0,
+    "iconSize": "medium",
+    "showGridLines": true,
+    "soundEffects": false,
+    "dockItems": [
+      "app-browser",
+      "app-terminal",
+      "app-notes",
+      "app-files",
+      "app-calculator",
+      "app-settings"
+    ]
+  },
+  "screens": [
+    {
+      "id": "screen-1",
+      "name": "Home Workspace",
+      "order": 0
+    },
+    {
+      "id": "screen-2",
+      "name": "Dev & Projects",
+      "order": 1
+    },
+    {
+      "id": "screen-3",
+      "name": "Media & Storage",
+      "order": 2
+    }
+  ],
+  "activeScreenId": "screen-1",
+  "shortcuts": [
+    {
+      "id": "widget-clock",
+      "title": "Time & Weather",
+      "type": "widget",
+      "widgetType": "clock_weather",
+      "screenId": "screen-1",
+      "x": 40,
+      "y": 40,
+      "w": 280,
+      "h": 140,
+      "color": "#6366f1",
+      "icon": "Clock",
+      "isLocked": false
+    },
+    {
+      "id": "widget-system",
+      "title": "System Diagnostics",
+      "type": "widget",
+      "widgetType": "system_stats",
+      "screenId": "screen-1",
+      "x": 360,
+      "y": 40,
+      "w": 280,
+      "h": 140,
+      "color": "#10b981",
+      "icon": "Activity",
+      "isLocked": false
+    },
+    {
+      "id": "app-browser",
+      "title": "Web Explorer",
+      "type": "app",
+      "appId": "browser",
+      "screenId": "screen-1",
+      "x": 40,
+      "y": 220,
+      "w": 96,
+      "h": 104,
+      "color": "#3b82f6",
+      "icon": "Globe",
+      "target": "https://developer.mozilla.org"
+    },
+    {
+      "id": "app-notes",
+      "title": "Quick Scratchpad",
+      "type": "widget",
+      "widgetType": "notes",
+      "screenId": "screen-1",
+      "x": 160,
+      "y": 220,
+      "w": 240,
+      "h": 220,
+      "color": "#f59e0b",
+      "icon": "FileText",
+      "content": "# Sprint Goals\n- Drag & resize shortcuts freely\n- Store files inside launcher directory\n- Atomic JSON DB persistence guaranteed\n- Snapping to custom desktop grid"
+    },
+    {
+      "id": "app-terminal",
+      "title": "Cloud Terminal",
+      "type": "app",
+      "appId": "terminal",
+      "screenId": "screen-1",
+      "x": 440,
+      "y": 220,
+      "w": 96,
+      "h": 104,
+      "color": "#10b981",
+      "icon": "Terminal",
+      "command": "launcher --status"
+    },
+    {
+      "id": "app-files",
+      "title": "File Manager",
+      "type": "app",
+      "appId": "filemanager",
+      "screenId": "screen-1",
+      "x": 560,
+      "y": 220,
+      "w": 96,
+      "h": 104,
+      "color": "#8b5cf6",
+      "icon": "FolderKanban"
+    },
+    {
+      "id": "file-readme",
+      "title": "Launcher_Guide.md",
+      "type": "file",
+      "screenId": "screen-1",
+      "x": 40,
+      "y": 360,
+      "w": 100,
+      "h": 104,
+      "color": "#06b6d4",
+      "icon": "FileCode",
+      "fileMeta": {
+        "filename": "Launcher_Guide.md",
+        "originalName": "Launcher_Guide.md",
+        "size": 1420,
+        "mimeType": "text/markdown",
+        "url": "/api/files/Launcher_Guide.md",
+        "uploadedAt": "2026-11-09T00:49:25.590Z"
+      }
+    },
+    {
+      "id": "app-calculator",
+      "title": "Calculator",
+      "type": "app",
+      "appId": "calculator",
+      "screenId": "screen-1",
+      "x": 440,
+      "y": 360,
+      "w": 96,
+      "h": 104,
+      "color": "#ec4899",
+      "icon": "Calculator"
+    },
+    {
+      "id": "app-settings",
+      "title": "Settings",
+      "type": "app",
+      "appId": "settings",
+      "screenId": "screen-1",
+      "x": 560,
+      "y": 360,
+      "w": 96,
+      "h": 104,
+      "color": "#64748b",
+      "icon": "Settings"
+    },
+    {
+      "id": "widget-todos",
+      "title": "Project Roadmap",
+      "type": "widget",
+      "widgetType": "tasks",
+      "screenId": "screen-2",
+      "x": 40,
+      "y": 40,
+      "w": 320,
+      "h": 240,
+      "color": "#8b5cf6",
+      "icon": "CheckSquare",
+      "content": "[{\"id\":\"1\",\"text\":\"Install and configure interact.js drag & resize\",\"done\":true},{\"id\":\"2\",\"text\":\"Persist layouts in local JSON database file\",\"done\":true},{\"id\":\"3\",\"text\":\"Provide dedicated folder file copy & upload\",\"done\":true},{\"id\":\"4\",\"text\":\"Responsive multi-device viewport support\",\"done\":true}]"
+    },
+    {
+      "id": "file-roadmap-json",
+      "title": "roadmap_spec.json",
+      "type": "file",
+      "screenId": "screen-2",
+      "x": 400,
+      "y": 40,
+      "w": 110,
+      "h": 104,
+      "color": "#eab308",
+      "icon": "FileJson",
+      "fileMeta": {
+        "filename": "roadmap_spec.json",
+        "originalName": "roadmap_spec.json",
+        "size": 890,
+        "mimeType": "application/json",
+        "url": "/api/files/roadmap_spec.json",
+        "uploadedAt": "2026-11-09T00:49:25.590Z"
+      }
+    },
+    {
+      "id": "url-interactjs",
+      "title": "Interact.js Docs",
+      "type": "url",
+      "screenId": "screen-2",
+      "x": 400,
+      "y": 180,
+      "w": 110,
+      "h": 104,
+      "color": "#22c55e",
+      "icon": "ExternalLink",
+      "target": "https://interactjs.io"
+    },
+    {
+      "id": "url-github",
+      "title": "Repository",
+      "type": "url",
+      "screenId": "screen-2",
+      "x": 540,
+      "y": 180,
+      "w": 110,
+      "h": 104,
+      "color": "#cbd5e1",
+      "icon": "Code2",
+      "target": "https://github.com"
+    },
+    {
+      "id": "widget-storage-overview",
+      "title": "Launcher Folder Vault",
+      "type": "widget",
+      "widgetType": "storage_vault",
+      "screenId": "screen-3",
+      "x": 40,
+      "y": 40,
+      "w": 380,
+      "h": 260,
+      "color": "#06b6d4",
+      "icon": "HardDrive"
+    }
+  ],
+  "auditLog": [
+    {
+      "id": "init-1",
+      "action": "INITIALIZE_DB",
+      "details": "Launcher JSON database initialized with integrity verification.",
+      "timestamp": "2026-11-09T00:49:25.590Z"
+    }
+  ]
+}
